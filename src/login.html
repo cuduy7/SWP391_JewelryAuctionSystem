@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <canvas
+    style="
+      inset: 0px;
+      pointer-events: none;
+      position: fixed;
+      z-index: 1000000000;
+    "
+    width="1614"
+    height="970"
+  ></canvas>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-blue-cus": "#204D94",
+              "linear-blue-cus-1": "#2962BC",
+              "linear-blue-cus-2": "#5889d6",
+              "secondary-blue-cus": "#0A142F",
+              "search-cus": "#f5f4f2",
+              "white-cus": "#e5e3dd",
+              "gray-cus": "#D6D6D6",
+              "gray-cus-2": "#333F51",
+              "orange-cus": "#F84C35",
+              "form-cus": "#FFD89C",
+            },
+            backgroundImage: {
+              "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+              "gradient-conic":
+                "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+            },
+            gridTemplateColumns: {
+              "auto-auto": "auto auto",
+            },
+            gridTemplateRows: {
+              cus: "64px",
+            },
+            fontSize: {
+              xxs: "0.5rem",
+            },
+            lineHeight: {
+              xxs: "0.75rem",
+            },
+            fontFamily: {
+              inter: ["Inter-Medium", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+    </style>
+  </head>
+  <body cz-shortcut-listen="true" style="overflow: auto">
+    <div>
+      <div
+        class="relative inset-0 lg:inset-auto bg-center bg-cover bg-no-repeat w-auto h-auto transition duration-500 overflow-x-hidden"
+        style="background-image: url('../../assets/imgs/background_2.png')"
+      >
+        <div
+          class="relative w-auto h-screen px-10 flex items-center justify-center transition duration-500"
+        >
+          <div class="absolute top-0 left-0 p-8 md:block hidden">
+            <button
+              class="flex flex-row items-center space-x-1 cursor-pointer text-white"
+              type="button"
+            >
+              <span>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="40"
+                  width="40"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M216.4 163.7c5.1 5 5.1 13.3.1 18.4L155.8 243h231.3c7.1 0 12.9 5.8 12.9 13s-5.8 13-12.9 13H155.8l60.8 60.9c5 5.1 4.9 13.3-.1 18.4-5.1 5-13.2 5-18.3-.1l-82.4-83c-1.1-1.2-2-2.5-2.7-4.1-.7-1.6-1-3.3-1-5 0-3.4 1.3-6.6 3.7-9.1l82.4-83c4.9-5.2 13.1-5.3 18.2-.3z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="font-semibold">Quay lại</span>
+            </button>
+          </div>
+          <div
+            class="relative bg-white bg-opacity-20 inset-0 rounded-xl py-2 px-8 w-[32rem]"
+          >
+            <div class="flex flex-col gap-3">
+              <div class="flex flex-row justify-between">
+                <section
+                  class="text-white text-3xl font-semibold py-2 space-y-2"
+                >
+                  <h1>Đăng nhập</h1>
+                </section>
+              </div>
+              <button class="absolute top-3 right-6 md:hidden" type="button">
+                <span class="text-4xl text-white font-semibold">×</span>
+              </button>
+              <div class="relative">
+                <form class="flex flex-col gap-3 pb-2">
+                  <div class="gap-1 transition duration-300">
+                    <label
+                      for="email"
+                      class="block text-left text-base font-semibold text-white mb-1"
+                    >
+                      Email
+                    </label>
+                    <div class="relative flex items-center">
+                      <span
+                        class="absolute inset-y-0 left-0 flex items-center pl-3 text-white-cus"
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 1024 1024"
+                          height="25"
+                          width="25"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-80.8 108.9L531.7 514.4c-7.8 6.1-18.7 6.1-26.5 0L189.6 268.9A7.2 7.2 0 0 1 194 256h648.8a7.2 7.2 0 0 1 4.4 12.9z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="Nhập email của bạn"
+                        maxlength="200"
+                        class="bg-inherit border-2 border-solid text-white pl-10 w-full rounded-lg outline-none focus:ring-0 text-base py-3 px-6 transition duration-300"
+                        value=""
+                      />
+                    </div>
+                    <p class="text-red-500 font-medium h-4 text-left"></p>
+                  </div>
+                  <div class="gap-1 transition duration-300">
+                    <label
+                      for="password"
+                      class="block text-left text-base font-semibold text-white mb-1"
+                      >Mật khẩu
+                    </label>
+                    <div class="relative flex items-center">
+                      <span
+                        class="absolute inset-y-0 left-0 flex items-center pl-3 text-white-cus"
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 24 24"
+                          height="25"
+                          width="25"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20 12c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5S7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <input
+                        id="password"
+                        type="password"
+                        name="password"
+                        placeholder="Nhập mật khẩu của bạn"
+                        maxlength="200"
+                        class="bg-inherit border-2 border-solid text-white pl-10 w-full rounded-lg outline-none focus:ring-0 text-base py-3 px-6 transition duration-300"
+                        value=""
+                      />
+                    </div>
+                    <p class="text-red-500 font-medium h-4 text-left"></p>
+                  </div>
+                  <div
+                    class="font-semibold cursor-pointer text-right text-white"
+                  >
+                    <a class=" " href="/forgot-password">Quên mật khẩu ?</a>
+                  </div>
+                  <button
+                    class="relative flex text-white bg-primary-blue-cus border border-primary-blue-cus text-center items-center font-semibold py-2 px-10 rounded-lg transition duration-500 group py-3 w-full font-semibold text-lg rounded-xl py-3 justify-center"
+                    type="submit"
+                  >
+                    Đăng nhập
+                  </button>
+                </form>
+              </div>
+              <div class="relative">
+                <div class="flex flex-col gap-4">
+                  <div class="border-b-2 border-white border-opacity-20"></div>
+                  <div class="flex font-medium text-lg text-white space-x-1">
+                    <span>Chưa có tài khoản?</span>
+                    <span class="underline cursor-pointer"
+                      ><a href="/register">Đăng ký ngay</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
