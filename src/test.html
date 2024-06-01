@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <canvas
+    style="
+      inset: 0px;
+      pointer-events: none;
+      position: fixed;
+      z-index: 1000000000;
+    "
+    width="1614"
+    height="970"
+  ></canvas>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-blue-cus": "#204D94",
+              "linear-blue-cus-1": "#2962BC",
+              "linear-blue-cus-2": "#5889d6",
+              "secondary-blue-cus": "#0A142F",
+              "search-cus": "#f5f4f2",
+              "white-cus": "#e5e3dd",
+              "gray-cus": "#D6D6D6",
+              "gray-cus-2": "#333F51",
+              "orange-cus": "#F84C35",
+              "form-cus": "#FFD89C",
+            },
+            backgroundImage: {
+              "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+              "gradient-conic":
+                "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+            },
+            gridTemplateColumns: {
+              "auto-auto": "auto auto",
+            },
+            gridTemplateRows: {
+              cus: "64px",
+            },
+            fontSize: {
+              xxs: "0.5rem",
+            },
+            lineHeight: {
+              xxs: "0.75rem",
+            },
+            fontFamily: {
+              inter: ["Inter-Medium", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+    </style>
+  </head>
+  <body cz-shortcut-listen="true" style="overflow: auto"></body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <canvas
+    style="
+      inset: 0px;
+      pointer-events: none;
+      position: fixed;
+      z-index: 1000000000;
+    "
+    width="1614"
+    height="970"
+  ></canvas>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-blue-cus": "#204D94",
+              "linear-blue-cus-1": "#2962BC",
+              "linear-blue-cus-2": "#5889d6",
+              "secondary-blue-cus": "#0A142F",
+              "search-cus": "#f5f4f2",
+              "white-cus": "#e5e3dd",
+              "gray-cus": "#D6D6D6",
+              "gray-cus-2": "#333F51",
+              "orange-cus": "#F84C35",
+              "form-cus": "#FFD89C",
+            },
+            backgroundImage: {
+              "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+              "gradient-conic":
+                "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+            },
+            gridTemplateColumns: {
+              "auto-auto": "auto auto",
+            },
+            gridTemplateRows: {
+              cus: "64px",
+            },
+            fontSize: {
+              xxs: "0.5rem",
+            },
+            lineHeight: {
+              xxs: "0.75rem",
+            },
+            fontFamily: {
+              inter: ["Inter-Medium", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+    </style>
+    <style>
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        padding: 12px 16px;
+      }
+      .dropdown-menu.show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body cz-shortcut-listen="true">
+    <div class="relative bg-[#F7F7F7]">
+      <div
+        class="relative w-full h-20 flex items-center justify-center bg-white shadow-sm"
+      >
+        <a href="/admin/admin-home"
+          ><section class="flex items-center space-x-2">
+            <img
+              alt="logo"
+              loading="lazy"
+              width="40"
+              height="40"
+              decoding="async"
+              data-nimg="1"
+              class="object-contain w-8 h-8"
+              srcset="
+              https://cdn-icons-png.flaticon.com/512/2828/2828920.png,
+              https://cdn-icons-png.flaticon.com/512/2828/2828920.png
+              "
+              src="https://cdn-icons-png.flaticon.com/512/2828/2828920.png"
+              style="color: transparent"
+            />
+            <h1 class="uppercase text-xl font-semibold text-[#343B63]">
+              XXXXXX
+            </h1>
+          </section></a
+        >
+      </div>
+      <div class="relative gap-5 pt-5 flex flex-col lg:grid lg:grid-cols-5">
+        <div
+          class="lg:col-span-1 lg:min-h-screen lg:max-h-full lg:flex lg:flex-col lg:gap-5"
+        >
+          <div
+            class="flex flex-col border border-black border-opacity-10 rounded-r-xl bg-white px-6 h-full gap-5 py-5 lg:py-10 lg:gap-10"
+          >
+            <div
+              class="relative flex flex-row justify-between items-center lg:flex-col lg:justify-normal lg:items-baseline"
+            >
+              <div class="text-gray-600 font-semibold text-2xl"></div>
+              <div class="text-xl font-semibold italic text-gray-500"></div>
+            </div>
+            <div class="border-b border-black border-opacity-10"></div>
+            <div class="lg:flex lg:flex-col lg:gap-10 hidden">
+              <button
+                class="relative flex flex-row items-center space-x-2 cursor-pointer hover:text-primary-blue-cus text-gray-600"
+              >
+                <div class="flex-shrink-0">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 640 512"
+                    height="24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="text-lg font-medium text-left">Quản lý người dùng</p>
+              </button>
+              <button
+                class="relative flex flex-row items-center space-x-2 cursor-pointer hover:text-primary-blue-cus text-gray-600"
+              >
+                <div class="flex-shrink-0">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 16 16"
+                    height="24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-5-.5H7a.5.5 0 0 1 0 1H4.5a.5.5 0 0 1 0-1zm0 3h7a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="text-lg font-medium text-left">Quản lý sân</p>
+              </button>
+            </div>
+            <div class="lg:hidden block">
+              <div class="relative inline-block w-full">
+                <select
+                  class="bg-[#F5F5F5] border-none w-full rounded-lg outline-none focus:ring-0 text-base py-3 px-6 transition duration-300"
+                >
+                  <option value="" disabled selected>Chọn</option>
+                  <option value="city1">Quản lý người dùng</option>
+                  <option value="city2">Quản lý sân</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div
+            class="border border-black border-opacity-10 rounded-t-xl rounded-l-none bg-white text-gray-600 hover:text-primary-blue-cus mt-auto lg:flex-none flex items-start"
+          >
+            <button
+              class="flex flex-row space-x-2 p-6 lg:items-center cursor-pointer"
+              type="button"
+            >
+              <div class="flex-shrink-0">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  height="24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 10v-2h-5v-2h5v-2l3 3zM11 9v4h-5v3l-6-3v-13h11v5h-1v-4h-8l4 2v9h4v-3z"
+                  ></path>
+                </svg>
+              </div>
+              <p class="text-lg font-medium">Đăng Xuất</p>
+            </button>
+          </div>
+        </div>
+        <div
+          class="lg:col-span-4 min-h-screen max-h-full flex flex-col gap-5 border border-black border-opacity-10 bg-white rounded-xl"
+        >
+          <div class="relative flex flex-col px-6 py-10">
+            <div
+              class="flex flex-col text-gray-600 gap-5 pb-10 md:flex-row md:justify-between md:items-center md:gap-0"
+            >
+              <h1 class="font-semibold md:text-4xl text-3xl flex-shrink-0">
+                Quản lý Sân
+              </h1>
+              <div
+                class="flex gap-3 flex-col md:flex-row justify-end flex-wrap transition-all duration-500"
+              >
+                <div
+                  class="flex flex-col space-y-1 md:w-auto w-full transition-all duration-500"
+                >
+                  <div class="relative flex items-center w-2/5 h-full w-full">
+                    <input
+                      type="text"
+                      class="w-full px-4 py-2 md:text-xl border border-black border-opacity-10 bg-[#F7F7F7] rounded-md focus:ring-0 focus:outline-none"
+                      placeholder="Tìm kiếm"
+                      value=""
+                    />
+                    <div class="absolute top-2 right-3">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        height="30"
+                        width="30"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <table
+              class="table-auto border-separate border border-black border-opacity-10 rounded-lg text-sm sm:text-base md:text-lg text-gray-600 text-center table"
+            >
+              <thead>
+                <tr id="table-header">
+                  <!-- Headers will be populated by JavaScript -->
+                </tr>
+              </thead>
+              <tbody id="table-body" class="text-base font-medium">
+                <!-- Rows will be populated by JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const listTitleUserManagement = [
+          { title: "STT" },
+          { title: "User ID" },
+          { title: "Full Name" },
+          { title: "Create Date" },
+          { title: "Role" },
+          { title: "Status" },
+          { title: "Last Login" },
+          { title: "Actions" },
+        ];
+
+        const listUser = [
+          {
+            userId: "1",
+            fullName: "John Doe",
+            createDate: "2022-01-01",
+            role: "Admin",
+            status: "active",
+            lastLogin: "2023-01-01",
+          },
+          {
+            userId: "2",
+            fullName: "Jane Doe",
+            createDate: "2022-01-02",
+            role: "User",
+            status: "inactive",
+            lastLogin: "2023-01-02",
+          },
+        ];
+
+        const listAction = [
+          {
+            title: "Edit",
+          },
+          {
+            title: "Delete",
+          },
+        ];
+
+        const tableHeader = document.getElementById("table-header");
+        const tableBody = document.getElementById("table-body");
+
+        listTitleUserManagement.forEach((item, index) => {
+          const th = document.createElement("th");
+          th.className = `font-semibold py-3 md:whitespace-nowrap px-1 ${
+            index < listTitleUserManagement.length - 1
+              ? "border-r border-b border-black border-opacity-10"
+              : "border-b"
+          }`;
+          th.innerText = item.title;
+          tableHeader.appendChild(th);
+        });
+
+        listUser.forEach((user, index) => {
+          const tr = document.createElement("tr");
+          const totalIndex = index + 1;
+
+          const columns = [
+            totalIndex,
+            user.userId,
+            user.fullName,
+            user.createDate,
+            user.role,
+            user.status.toLowerCase() === "active" ? "Hoạt động" : "Bị khóa",
+            user.lastLogin,
+          ];
+
+          columns.forEach((col, idx) => {
+            const td = document.createElement("td");
+            td.className = `py-3 ${
+              idx < columns.length - 1
+                ? "border-r border-black border-opacity-10"
+                : "border-r"
+            }`;
+            td.innerText = col;
+            tr.appendChild(td);
+          });
+
+          const actionTd = document.createElement("td");
+          actionTd.className = "py-3 relative";
+
+          const actionButton = document.createElement("button");
+          actionButton.className = "cursor-pointer";
+          actionButton.type = "button";
+          actionButton.innerText = "...";
+          actionButton.addEventListener("click", function () {
+            const dropdownMenu = actionTd.querySelector(".dropdown-menu");
+            dropdownMenu.classList.toggle("show");
+          });
+
+          const dropdownMenu = document.createElement("div");
+          dropdownMenu.className =
+            "dropdown-menu bg-gray-100 shadow-md rounded-lg w-auto p-2 z-[1001] text-left whitespace-nowrap";
+
+          const ul = document.createElement("ul");
+          ul.className = "space-y-2 list-none";
+
+          listAction.forEach((action, idx) => {
+            const li = document.createElement("li");
+            li.className =
+              "hover:bg-slate-200 hover:text-primary-blue-cus p-2 cursor-pointer";
+
+            const button = document.createElement("button");
+            button.type = "button";
+            button.innerText = action.title;
+            button.addEventListener("click", () => {
+              window.location.href = action.src(user.userId);
+            });
+
+            li.appendChild(button);
+            ul.appendChild(li);
+          });
+
+          dropdownMenu.appendChild(ul);
+          actionTd.appendChild(actionButton);
+          actionTd.appendChild(dropdownMenu);
+          tr.appendChild(actionTd);
+          tableBody.appendChild(tr);
+        });
+      });
+    </script>
+  </body>
+</html>
