@@ -42,7 +42,7 @@ const listTitleSetting = [
     { settingName: SettingNames.CancelHour, label: "Thời gian hủy bài (giờ)" },
 ]
 
-const exportToExcel = (listItem: HistoryTransactionData[]) => {
+const exportToExcel = (listItem: HistoryTransactionData[]) => {// Tai du lieu giao dich ve excel
     const headers = listTitleHistoryWallet.slice(1, 5).map(item => item.title)
 
     const data = listItem.map(item => [

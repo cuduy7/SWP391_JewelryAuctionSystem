@@ -618,18 +618,16 @@ export const listTitleFooter = [
 ]
 
 export const listOverviewFooter = [
-    { label: "VBM Sports", content: "Là hệ thống cửa hàng cầu lông với hơn 50 chi nhánh trên toàn quốc, cung cấp sỉ và lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp" },
-    { label: "Với sứ mệnh:", content: "Với sứ mệnh: VBM cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho người chơi thể thao để nâng cao sức khỏe của chính mình" },
-    { label: "Tầm nhìn:", content: "Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam" },
+    { label: "VBM Sports", content: "Là hệ thống cửa hàng đặt sân cầu lông cho những ai muốn có một nơi để nâng cao kỹ năng hay đơn giản là thỏa sức với đam mê của mình về bộ môn này" },
+    { label: "Với sứ mệnh:", content: "VBM cam kết mang đến những trải nghiệm tốt nhất phục vụ cho người chơi có niềm đam mê với cầu lông" },
+    { label: "Tầm nhìn:", content: "Trở thành trung tâm đặt sân hàng đầu Việt Nam"},
 ]
 
 export const listContentFooter = [
-    { label: "Hệ thống cửa hàng:", content: "56 cửa hàng trên toàn quốc" },
-    { label: "Hotline:", content: "0788612959 | 0788612959" },
+    { label: "Hotline:", content: "0909090909 | 1900585858" },
     { label: "Email:", content: "info@shopVBM.com" },
-    { label: "Hợp tác kinh doanh:", content: "0947342259" },
-    { label: "Hotline bán sỉ:", content: "032.63.67.618" },
-    { label: "Than phiền dịch vụ:", content: "0334.741.141" },
+    { label: "Hotline:", content: "032.63.67.618" },
+    { label: "Hỗ trợ dịch vụ:", content: "0334.741.141" },
 ]
 
 export const Status = [

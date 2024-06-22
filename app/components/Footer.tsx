@@ -9,8 +9,7 @@ import React from "react"
 const Footer = () => {
   return (
     <div className="
-        bg-secondary-blue-cus 
-        w-full 
+        bg-black
         text-white
       "
     >
@@ -92,7 +91,7 @@ const Footer = () => {
                   flex-row 
                   flex-shrink-0
                   bg-white 
-                  text-secondary-blue-cus
+                  text-black
                   rounded-md 
                   gap-2 
                   items-center 
@@ -124,7 +123,7 @@ const Footer = () => {
                   flex-row 
                   flex-shrink-0
                   bg-white
-                  text-secondary-blue-cus
+                  text-black
                   rounded-md 
                   gap-2 
                   items-center 
