@@ -38,13 +38,14 @@ const FormatUI: React.FC<FormatUIProps> = ({
             <div className="
                     relative 
                     w-auto 
-                    h-screen 
+                    h-screen
                     px-10
                     flex 
                     items-center 
                     justify-center
                     transition
                     duration-500
+                    mb-[5rem]
                 "
             >
                 <div className="
@@ -91,10 +92,12 @@ const FormatUI: React.FC<FormatUIProps> = ({
                             <div className="flex flex-row justify-between">
                                 <section className="
                                         text-white
-                                        text-3xl 
+                                        text-4xl 
+                                        text-center
                                         font-semibold 
                                         py-2
                                         space-y-2
+                                        pt-20
                                     "
                                 >
                                     <h1>

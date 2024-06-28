@@ -192,7 +192,8 @@ const PostManagement = () => {
                     </>
                 )}
             </section>
-            {user && user.role && user.role.toLowerCase() === "staff" && (
+            {/*make sure only Staff can create blog */}
+             {user && user.role && user.role.toLowerCase() === "staff" && ( 
                 <div className="fixed bottom-5 right-5">
                     <Button
                         title="Tạo tin tức"
